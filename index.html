@@ -13,11 +13,39 @@
       <div>
         <ul id="side-bar">
           <li>
+            <div class="color"></div>
             <button>BLACK</button>
           </li>
-          <li><button>COLOR</button></li>
-          <li><button>RAINBOW</button></li>
-          <li><button>ERASER</button></li>
+          <li>
+            <div class="color" id="color"></div>
+            <button>COLOR</button>
+          </li>
+          <li>
+            <div class="color" id="rainbow"></div>
+            <button>RAINBOW</button>
+          </li>
+          <li>
+            <div class="color" id="eraser"></div>
+            <button>ERASER</button>
+          </li>
+          <li>
+            <div class="color" id="border"></div>
+            <button>BORDER</button>
+          </li>
+          <li>
+            <button>CLEAR</button>
+          </li>
+          <li id="new-grid">
+            <input
+              type="number"
+              name="size"
+              id="size"
+              class=""
+              min="1"
+              max="64"
+            />
+            <button>NEW GRID</button>
+          </li>
         </ul>
       </div>
       <div id="container"></div>

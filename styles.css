@@ -1,4 +1,10 @@
 * {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -27,7 +33,7 @@ body {
   display: flex;
   flex: 1 1 auto;
   padding: 3px;
-  background-color: #d4e3de;
+  background-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
 }
@@ -54,8 +60,9 @@ a:hover {
   border: 1px black solid;
   border-radius: 10%;
 }
-.field:hover {
-  background-color: black;
+.field-no-border {
+  flex: 1 1 0;
+  border-radius: 10%;
 }
 footer {
   flex: 0 0 auto;
@@ -75,6 +82,7 @@ li {
   flex: 1 0 auto;
   list-style: none;
   display: flex;
+  gap: 25px;
 }
 button {
   border-radius: 50%;
@@ -83,4 +91,12 @@ button {
   color: inherit;
   padding: 20px;
   border: 0;
+}
+.color {
+  flex: 0 0 60px;
+  background-color: black;
+  border-radius: 50%;
+}
+#eraser {
+  background-color: white;
 }
